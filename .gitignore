@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 # .gitignore
-public/imgfile/5GNR.mp4
 .env
+public/imgfile/5GNR.mp4
