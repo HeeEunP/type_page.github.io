@@ -122,10 +122,10 @@ function Technologies()
                 alt="5GNR 이미지"
                 style={{width: '95%', marginLeft: '20px', marginTop: '10px'}}
               />
-              <video className="card-video" controls>
+              {/* <video className="card-video" controls>
                 <source src="/imgfile/5GNR.mp4" type="video/mp4"/>
                 브라우저가 동영상을 지원하지 않습니다.
-              </video>
+              </video> */}
               <p className="tech-card-description">
                 <ul>
                   <li>5G, 4G 기지국의 신호 품질 및 RB 점유율 측정 장치(ETRI)</li>
