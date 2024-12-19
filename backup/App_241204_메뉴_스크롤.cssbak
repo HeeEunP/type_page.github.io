@@ -1,0 +1,56 @@
+/* App.css */
+
+/* 기본 애니메이션 */
+.page-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
+}
+.page-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.page-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 500ms, transform 500ms;
+}
+
+/* 기본 레이아웃 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fafafa;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+  cursor: pointer;
+}
+
+.menu-links a {
+  margin-left: 20px;
+  color: rgb(37, 0, 0);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.menu-links a:hover {
+  text-decoration: underline;
+}

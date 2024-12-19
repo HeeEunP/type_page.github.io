@@ -1,0 +1,49 @@
+/* Location.css */
+.Location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; 
+    text-align: center;
+    margin-top: 80px;
+}
+
+.map-container {
+    width: 70%;
+    height: 500px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.header-icon {
+    color: rgb(172, 9, 9);
+}
+
+.header-title {
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.company-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.company-address {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.company-contact {
+    font-size: 15px;
+    margin: 10px 0;
+}

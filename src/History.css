@@ -1,0 +1,106 @@
+/* History.css */
+.our-journey-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.timeline-section {
+  margin-bottom: 40px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  border-left: 4px solid #204c7a;
+  padding-left: 20px;
+}
+
+.timeline-year {
+  font-size: 25px;
+  font-weight: bold;
+  color: #204c7a;
+  margin-bottom: 5px;
+}
+
+.timeline-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.timeline-description {
+  font-size: 14px;
+  color: #555;
+}
+.timeline-description-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.timeline-description-item {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.certification-section {
+  background-color: white;
+  padding: 20px 0;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  color: #204c7a;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-content {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #555;
+  font-size: 14px;
+}

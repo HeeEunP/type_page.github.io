@@ -1,0 +1,60 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import MainPage     from './MainPage';
+import AboutUs      from './AboutUs';
+import OurJourney   from './OurJourney';
+import Technologies from './Technologies';
+import Location     from './Location';
+import ScrollTo     from './ScrollTo';
+import './App.css';
+
+function AnimatedRoutes() 
+{
+  const location = useLocation();
+
+  return (
+    <SwitchTransition>
+        <CSSTransition
+            key={location.pathname}
+            classNames="page"
+            timeout={500}
+        >
+            <Routes location={location}>
+                <Route path='/main'         element={<MainPage    />}/>
+                <Route path="/about-us"     element={<AboutUs     />}/>
+                <Route path="/our-journey"  element={<OurJourney  />}/>
+                <Route path="/technologies" element={<Technologies/>}/>
+                <Route path="/location"     element={<Location    />}/>
+            </Routes>
+        </CSSTransition>
+    </SwitchTransition>
+  );
+}
+
+function App() 
+{
+  return (
+      <Router>
+          <ScrollTo />
+          <div className="app">
+              <nav className="main-menu">
+                  <div className="logo">
+                      <Link to="/main">
+                          <img src="/TMG_logo.png" alt="Company Logo" />
+                      </Link>
+                  </div>
+                  <div className="menu-links">
+                      <Link to="/about-us">     About Us    </Link>
+                      <Link to="/our-journey">  Our Journey </Link>
+                      <Link to="/technologies"> Technologies</Link>
+                      <Link to="/location">     Location    </Link>
+                  </div>
+              </nav>
+              <AnimatedRoutes />
+          </div>
+      </Router>
+  );
+}
+
+export default App;
