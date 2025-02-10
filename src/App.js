@@ -133,14 +133,12 @@ function App()
 
   return (
     <NavermapsProvider ncpClientId={CLIENT_ID}>
-        <Router>
-            <ScrollTo />
-            <ResponsiveAppBar />
-            <div className='main-content'>
-              <AnimatedRoutes />
-            </div>
-            <Footer/>
-        </Router>
+      <ScrollTo />
+      <ResponsiveAppBar />
+      <div className="main-content">
+        <AnimatedRoutes />
+      </div>
+      <Footer />
     </NavermapsProvider>
   );
 }
