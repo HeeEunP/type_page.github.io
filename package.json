@@ -2,7 +2,7 @@
   "name": "page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HeeEunP.github.io/tmgk.github.io",
+  "homepage": ".",
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
